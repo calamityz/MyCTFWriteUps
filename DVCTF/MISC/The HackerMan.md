@@ -15,26 +15,31 @@ What's really interesting is Born Hackerman twitter account.
 
 We can see he made 4 tweets (ordered by most recent) : 
 - A video extact from Taken 1
-![BornHackerMan Twitter Account](../images/h3.png)
+
+![BornHackerMan Twitter Account|100](../images/h3.png)
+
 - A tweet he wrote telling us he's using Github and Docker
-![BornHackerMan Twitter Account](../images/h4.png)
+
+![BornHackerMan Twitter Account|100](../images/h4.png)
+
 - A GIF of Mr Burns , telling us he learned to hide data
-![BornHackerMan Twitter Account](../images/h5.png)
+![BornHackerMan Twitter Account|100](../images/h5.png)
+
 -  A tweet telling us he's creating a new CTF
- ![BornHackerMan Twitter Account](../images/h6.png)
+ ![BornHackerMan Twitter Account|100](../images/h6.png)
   
   Looking closely at the video we can see  there are subtitles. Activate them we get the following message :
   
-  0:06/0:50 : * Dialing *
-  0:08/0:50 : * Ringing *
-  0:13/0:50 : I finish my first CTF *hurray*
-  0:17/0:50 : Find it at "hacker/[0-9]+/"  
-  0:19/0:50 : Signed: "The Hackeman"
+  0:06/0:50 : * Dialing *\
+  0:08/0:50 : * Ringing *\
+  0:13/0:50 : I finish my first CTF *hurray*\
+  0:17/0:50 : Find it at "hacker/[0-9]+/"\  
+  0:19/0:50 : Signed: "The Hackeman"\
   
   We understand that "hacker/[0-9]+/"  is a regex pattern meaning we are looking for something with hacker followed by one or more numbers. 
   
   
- At this stage you were supposed to notice that you can get the number you were looking for was at the beginning of the video. Using DTFM and a tool such as [dCode](https://www.dcode.fr/code-dtmf. You would find the following number 439804.
+ At this stage you were supposed to notice that you can get the number you were looking for was at the beginning of the video. Using DTFM and a tool such as [dCode](https://www.dcode.fr/code-dtmf). You would find the following number 439804.
  
   From the previous tweet we figured out he used docker to develop his first CTF. We went on the [docker hub]() registry and looked for the last container uploaded by someone with hacker in their pseudo. Sorting results by "Recently Updated", on page 3 we can find [hacker439804/myfirstctf](https://hub.docker.com/r/hacker439804/myfirstctf) container.
   
