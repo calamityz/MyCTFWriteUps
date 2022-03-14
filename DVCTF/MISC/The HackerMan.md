@@ -23,9 +23,11 @@ We can see he made 4 tweets (ordered by most recent) :
 ![BornHackerMan Twitter Account|100](../images/h4.png)
 
 - A GIF of Mr Burns , telling us he learned to hide data
+
 ![BornHackerMan Twitter Account|100](../images/h5.png)
 
 -  A tweet telling us he's creating a new CTF
+
  ![BornHackerMan Twitter Account|100](../images/h6.png)
   
   Looking closely at the video we can see  there are subtitles. Activate them we get the following message :
