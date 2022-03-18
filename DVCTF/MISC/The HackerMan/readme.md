@@ -53,15 +53,15 @@ We can see he made 4 tweets (ordered by most recent) :
   
 **5.** Instead we remembered that you can view the content of the Dockerfile by clicking on tag and the specific container. 
  
- ![Flag](../../images/hackerman-8.png)
+ ![Docker Container to choose](../../images/hackerman-8.png)
  
  In this container , go to the instructions at line 8, you'll find the flag :
  
  ![Flag](../../hackerman-9.png)
  
  <details>
-  <summary> 🚩 FLAG</summary>
-  ```
-	dvCTF{Z2NjBpvaLnEubB}
+  <summary>:triangular_flag_on_post: FLAG</summary>
+    ```
+  dvCTF{Z2NjBpvaLnEubB}
   ```
 </details>
