@@ -1,6 +1,7 @@
 # The HackerMan
-
-_Number of points : 491_
+⚔️ _Difficulty : Easy_
+📝 _Category : OSINT, Steganography_
+💯_Number of points : 491_
 
 Instructions :
 ```
@@ -9,27 +10,27 @@ I found someone on social media, teasing a CTF he made but I couldn't find out m
 
 **1.** You can look for the different services where this pseudo is used with the python script [sherlock](https://github.com/sherlock-project/sherlock). You will get 11 answer, a few of them are false positive. 
 
-![Sherlock on BornHackerMan](../images/h1.png)
+![Sherlock on BornHackerMan](../../images/hackerman-1.png)
 
 **2.** What's really interesting is Born Hackerman twitter account.  
-![BornHackerMan Twitter Account](../images/h2.png)
+![BornHackerMan Twitter Account](../../images/hackerman-2.png)
 
 We can see he made 4 tweets (ordered by most recent) : 
 - A video extact from Taken 1
 
-![BornHackerMan Twitter Account|100](../images/h3.png)
+![BornHackerMan Twitter Account|100](../../images/hackerman-3.png)
 
 - A tweet he wrote telling us he's using Github and Docker
 
-![BornHackerMan Twitter Account|100](../images/h4.png)
+![BornHackerMan Twitter Account|100](../../images/hackerman-4.png)
 
 - A GIF of Mr Burns , telling us he learned to hide data
 
-![BornHackerMan Twitter Account|100](../images/h5.png)
+![BornHackerMan Twitter Account|100](../../images/hackerman-5.png)
 
 -  A tweet telling us he's creating a new CTF
 
- ![BornHackerMan Twitter Account|100](../images/h6.png)
+ ![BornHackerMan Twitter Account|100](../../images/hackerman-6.png)
   
   **3.** Looking closely at the video we can see  there are subtitles. Activate them we get the following message :
   
@@ -46,10 +47,21 @@ We can see he made 4 tweets (ordered by most recent) :
  
  **4.** From the previous tweet we figured out he used docker to develop his first CTF. We went on the [docker hub]() registry and looked for the last container uploaded by someone with hacker in their pseudo. Sorting results by "Recently Updated", on page 3 we can find [hacker439804/myfirstctf](https://hub.docker.com/r/hacker439804/myfirstctf) container.
   
-   ![Docker container](../images/h7.png)
+   ![Docker container](../../images/hackerman-7.png)
    
   We tried to pull the docker container and run it but nothing appeared.We didn't saw it but if you launch the container in interactive mode and you can find a file note.txt saying : "The flag is hidden inside this docker image...".
   
 **5.** Instead we remembered that you can view the content of the Dockerfile by clicking on tag and the specific container. 
  
- ![Flag](../images/h8.png)
+ ![Flag](../../images/hackerman-8.png)
+ 
+ In this container , go to the instructions at line 8, you'll find the flag :
+ 
+ ![Flag](../../hackerman-9.png)
+ 
+ <details>
+  <summary> 🚩 FLAG</summary>
+  ```
+	dvCTF{Z2NjBpvaLnEubB}
+  ```
+</details>
